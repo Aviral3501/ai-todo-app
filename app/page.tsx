@@ -1,17 +1,18 @@
 import { Button } from "@/components/ui/button";
-import Tasks from "../components/Tasks"
+import {signInAction} from "@/actions/auth-actions";
 
 
 const Home = () => {
- 
+  
   return (
-    <>
-    <Button className="">Get tasks</Button>
-    <Tasks/>
-    <p className="bg-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat quisquam ullam.</p>
-    </>
-
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <h1 className="text-2xl mb-4">Login</h1>
+      <form action={signInAction} className="flex flex-col items-center">
+        <Button>Login</Button>
+      </form>
+    </div>
   );
-}
+};
 
 export default Home;
+
