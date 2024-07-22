@@ -9,7 +9,7 @@ export default function UserProfile() {
   return (
     <div>
       <Image
-        src={session?.user?.image || "/default-avatar.png"}
+        src={session?.user?.image || "images/user-avatar.svg"}
         alt="User Profile Image"
         width={40} 
         height={40} 
